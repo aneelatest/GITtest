@@ -1,0 +1,17 @@
+import os
+
+str1= "howtooooo"
+str2= "square_ff"
+str3= "/home/aneela"
+str4= ""
+str5= "n"
+str6= "n"
+os.system("gr_modtool newmod "+str1)
+os.chdir(str3+"/gr-"+str1)
+	#os.system("gr_modtool add -t general "+str2)
+os.system("gr_modtool add -t general square_ff <<EOF \n"+str4+"\n"+ str5+"\n"+str6+"\nEOF\n")
+os.chdir(str3+"/gr-"+str1+"/lib")
+os.system('gedit '+str2+'_impl.cc')
+os.chdir(str3+"/gr-"+str1+"/grc")
+os.system('gedit '+str1+'_'+str2+'.xml')
+	
