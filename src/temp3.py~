@@ -14,4 +14,5 @@ os.chdir(str3+"/gr-"+str1+"/lib")
 os.system('gedit '+str2+'_impl.cc')
 os.chdir(str3+"/gr-"+str1+"/grc")
 os.system('gedit '+str1+'_'+str2+'.xml')
+print "that's good"
 	
